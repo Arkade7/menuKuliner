@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private RecyclerView Rmakanan;
     RecyclerView.Adapter adapter;
-    private ArrayList<makanan> listmakanan;
+    private ArrayList<classmakanan> listmakanan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData(){
         this.listmakanan = new ArrayList<>();
-        listmakanan.add(new makanan("pecel lele","lele dikasih sambel",20000,R.drawable.pecel_lele));
-        listmakanan.add(new makanan("ayam geprek","ayam digeprek",20000,R.drawable.ayam_geprek));
-        listmakanan.add(new makanan("nasi goreng","nasi ditumis",20000,R.drawable.nasi_goreng));
+        listmakanan.add(new classmakanan("pecel lele","lele dikasih sambel",20000,R.drawable.pecel_lele));
+        listmakanan.add(new classmakanan("ayam geprek","ayam digeprek",20000,R.drawable.ayam_geprek));
+        listmakanan.add(new classmakanan("nasi goreng","nasi ditumis",20000,R.drawable.nasi_goreng));
     }
 }

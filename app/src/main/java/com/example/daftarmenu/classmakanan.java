@@ -1,10 +1,10 @@
 package com.example.daftarmenu;
 
-public class makanan {
+public class classmakanan {
     private String nama, desc;
     private Integer harga, gambar;
 
-    public makanan(String nama, String desc, Integer harga, Integer gambar) {
+    public classmakanan(String nama, String desc, Integer harga, Integer gambar) {
         this.nama = nama;
         this.desc = desc;
         this.harga = harga;

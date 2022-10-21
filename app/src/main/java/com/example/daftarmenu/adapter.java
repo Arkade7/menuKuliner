@@ -20,11 +20,11 @@ import java.util.ArrayList;
 
 public class adapter extends RecyclerView.Adapter<adapter.ViewHolder>{
 
-    public adapter(ArrayList<makanan> listmakanan) {
+    public adapter(ArrayList<classmakanan> listmakanan) {
         this.listmakanan = listmakanan;
     }
 
-    private ArrayList<makanan> listmakanan;
+    private ArrayList<classmakanan> listmakanan;
 
     @NonNull
     @Override
@@ -37,7 +37,7 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull adapter.ViewHolder holder, int position) {
-        makanan makanan = listmakanan.get(position);
+        classmakanan makanan = listmakanan.get(position);
         holder.NamaMakanan.setText(makanan.getNama());
         holder.harga.setText(makanan.getHarga());
         holder.deskripsi.setText(makanan.getDesc());
